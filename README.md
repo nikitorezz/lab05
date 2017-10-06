@@ -133,7 +133,17 @@ $ cat CMakeLists.txt # просмотр
 $ cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install # сборка
 $ cmake --build _build --target install
 $ tree _install # вывод в виде дерева
+
+_install
+├── cmake
+│ ├── print-config-noconfig.cmake
+│ └── print-config.cmake
+├── include
+│ └── print.hpp
+└── lib
+└── libprint.a
 ```
+
 
 Коммит в репозиторий
 ```ShellSession
